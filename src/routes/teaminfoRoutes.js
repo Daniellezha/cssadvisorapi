@@ -1,7 +1,8 @@
 
-import sql from '../db';
-import uuid from 'node-uuid';
-
+var express = require('express');
+//var teaminforoutes = express.Router();
+var sql = require('../db');
+var uuid = require('node-uuid')
 
 
 const teaminforoutes = (app) => {
@@ -91,4 +92,5 @@ const teaminforoutes = (app) => {
     }
 }
 
-export default teaminforoutes;
+module.exports = teaminforoutes;
+//export default teaminforoutes;
